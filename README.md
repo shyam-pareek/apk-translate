@@ -41,37 +41,38 @@ Bash
 pip install -r requirements.txt
 ```
 💻 How to Use
+
 Step 1: Prepare your files
 Place the APK you want to translate and the uber-apk-signer.jar file inside the apk-translate folder.
 
 Step 2: Run the script
+
 On macOS / Linux:
-Bash
 ```python3 translate_apk.py your_app.apk```
+
 On Windows:
-Bash
 ```python translate_apk.py your_app.apk```
-Step 3: Get your result
+
 The script will perform the following automatically:
 
-Decompile: Extracts the APK resources using Apktool.
+**Decompile**: Extracts the APK resources using Apktool.
 
-Translate: Scans all strings.xml files, detects foreign languages, and translates them to English.
+**Translate**: Scans all strings.xml files, detects foreign languages, and translates them to English.
 
-Rebuild: Recompiles the resources into a new APK.
+**Rebuild**: Recompiles the resources into a new APK.
 
-Sign: Signs the APK using uber-apk-signer so it is ready for installation.
+**Sign**: Signs the APK using uber-apk-signer so it is ready for installation.
 
 The final version will be saved as: your_app_translated.apk.
 
-⚠️ Troubleshooting
-Apktool Errors: Ensure apktool is in your System PATH. Check by typing apktool -version.
+⚠️ **Troubleshooting**
+**Apktool Errors**: Ensure apktool is in your System PATH. Check by typing apktool -version.
 
-Java Errors: Ensure Java is installed. The script needs it to rebuild and sign the APK.
+**Java Errors**: Ensure Java is installed. The script needs it to rebuild and sign the APK.
 
-Apostrophe Errors: This script automatically handles (escapes) apostrophes and special characters that often break the apktool build process.
+**Apostrophe Errors**: This script automatically handles (escapes) apostrophes and special characters that often break the apktool build process.
 
-⚖️ License & Disclaimer
+⚖️ **License & Disclaimer**
 Distributed under the MIT License.
 
-Disclaimer: This tool is intended for educational purposes and authorized security testing only. The author is not responsible for any misuse or damage caused by this tool.
+**Disclaimer:** This tool is intended for educational purposes and authorized security testing only. The author is not responsible for any misuse or damage caused by this tool.
