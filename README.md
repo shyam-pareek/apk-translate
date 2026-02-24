@@ -1,81 +1,129 @@
 # apk-translate 🛡️
 
-**apk-translate** is a universal Android APK UI translator designed for security researchers and penetration testers. It automatically detects and converts non-English app strings (Japanese, Chinese, Arabic, Hindi, etc.) into English. 
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
+![GitHub stars](https://img.shields.io/github/stars/shyam-pareek/apk-translate?style=social)
+
+**apk-translate** is a universal Android APK UI translator designed for security researchers and penetration testers. It automatically detects and converts non-English app strings (Japanese, Chinese, Arabic, Hindi, etc.) into English.
 
 This tool is specifically helpful when performing **API Security Testing** on apps where the backend is in English, but the UI is localized in a foreign language.
 
 ---
 
+## 🧾 Short Description (GitHub Sidebar)
+
+Universal APK UI translator that converts localized Android app strings to English to simplify security testing and reverse engineering workflows.
+
+---
+
 ## 🚀 Features
-* **Universal Detection:** Automatically identifies the source language.
-* **Batch Translation:** Scans all resource folders (`values`, `values-ja`, etc.).
-* **Auto-Fixing:** Automatically escapes special characters (apostrophes, quotes) that usually break Apktool builds.
-* **One-Click Workflow:** Decompiles, translates, rebuilds, and signs the APK in one go.
+
+- **Universal Detection:** Automatically identifies the source language  
+- **Batch Translation:** Scans all resource folders (`values`, `values-ja`, etc.)  
+- **Auto-Fixing:** Escapes special characters that usually break Apktool builds  
+- **One-Click Workflow:** Decompile → Translate → Rebuild → Sign  
+
+---
+
+## 🎬 Demo
+
+> Replace the path below after uploading your GIF (example: `/docs/demo.gif`)
+
+![apk-translate demo](docs/demo.gif)
 
 ---
 
 ## 📋 Prerequisites
 
-Before running the script, ensure you have the following installed:
-
-1.  **Python 3.x**
-2.  **Java JRE/JDK** (Required for Apktool and Signing)
-3.  **Apktool**: [Installation Guide](https://apktool.org/docs/install/)
-4.  **uber-apk-signer.jar**: [Download latest release](https://github.com/patrickfav/uber-apk-signer/releases) (Place it in the same folder as the script).
+1. **Python 3.x**  
+2. **Java JRE/JDK** (Required for Apktool and signing)  
+3. **Apktool** – https://apktool.org/docs/install/  
+4. **uber-apk-signer.jar** – https://github.com/patrickfav/uber-apk-signer/releases  
+   - Place it in the same folder as the script  
 
 ---
 
 ## 🛠️ Setup & Installation
 
-### 1. Clone the Repository
-```
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/shyam-pareek/apk-translate.git
 cd apk-translate
 ```
 
-### 2. Install Python Dependencies
-Ensure you have Python 3 installed, then run:
+### 2️⃣ Install Dependencies
 
-```
+```bash
 pip install -r requirements.txt
 ```
-## 💻 How to Use
 
-Step 1: Prepare your files
-Place the APK you want to translate and the uber-apk-signer.jar file inside the apk-translate folder.
+---
 
-Step 2: Run the script
+## 💻 Usage
 
-On macOS / Linux:
-```
+### Step 1 — Prepare Files
+
+Place your target APK and `uber-apk-signer.jar` inside the project folder.
+
+### Step 2 — Run
+
+**macOS / Linux**
+
+```bash
 python3 translate_apk.py your_app.apk
 ```
 
-On Windows:
-```
+**Windows**
+
+```bash
 python translate_apk.py your_app.apk
 ```
 
-The script will perform the following automatically:
+---
 
-**Decompile**: Extracts the APK resources using Apktool.
+## 🔄 Workflow
 
-**Translate**: Scans all strings.xml files, detects foreign languages, and translates them to English.
+1. **Decompile** → Extracts resources with Apktool  
+2. **Translate** → Converts all detected non-English strings  
+3. **Rebuild** → Compiles the modified resources  
+4. **Sign** → Produces an installable APK  
 
-**Rebuild**: Recompiles the resources into a new APK.
+Output file:
 
-**Sign**: Signs the APK using uber-apk-signer so it is ready for installation.
+```
+your_app_translated.apk
+```
 
-The final version will be saved as: your_app_translated.apk.
+---
 
-⚠️ **Troubleshooting**
-**Apktool Errors**: Ensure apktool is in your System PATH. Check by typing apktool -version.
+## ⚠️ Troubleshooting
 
-**Java Errors**: Ensure Java is installed. The script needs it to rebuild and sign the APK.
+**Check Apktool**
 
-**Apostrophe Errors**: This script automatically handles (escapes) apostrophes and special characters that often break the apktool build process.
+```bash
+apktool -version
+```
 
-⚖️ **License & Disclaimer**
-Distributed under the MIT License.
+**Check Java**
 
-**Disclaimer:** This tool is intended for educational purposes and authorized security testing only. The author is not responsible for any misuse or damage caused by this tool.
+```bash
+java -version
+```
+
+**Build Errors**
+
+The script auto-escapes problematic characters like apostrophes and quotes.
+
+---
+
+## ⚖️ License
+
+MIT License
+
+---
+
+## ❗ Disclaimer
+
+This tool is intended for **educational purposes and authorized security testing only**.  
+The author is not responsible for misuse or damage caused by this tool.
