@@ -20,7 +20,7 @@
 
 ## 🧾 Overview
 
-**apk-translate** is a high-performance Android APK UI translator designed for security researchers and penetration testers.
+**APK-Translate** is a high-performance Android APK UI translator designed for security researchers and penetration testers.
 
 Unlike tools that rely on unreliable auto-detection, this tool uses **Strict Parameter Locking** and **Character-Range Validation** to ensure accurate translations of localized app strings.
 
