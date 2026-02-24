@@ -108,7 +108,6 @@ pip install -r requirements.txt
 ### Command Syntax
 
 ```bash
-# macOS / Linux
 python3 apk-translate.py <file.apk> <lang_code>
 ```
 
