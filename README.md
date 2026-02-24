@@ -85,7 +85,7 @@ pip install -r requirements.txt
 ## 💻 Usage
 
 ```bash
-python3 translate_apk.py your_app.apk
+python3 apk-translate.py your_app.apk
 ```
 
 ---
@@ -105,7 +105,7 @@ The generated APK is signed and ready for installation.
 ```
 apk-translate/
 │
-├── translate_apk.py
+├── apk-translate.py
 ├── requirements.txt
 ├── docs/
 │   ├── banner.svg
