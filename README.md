@@ -28,15 +28,14 @@ Before running the script, ensure you have the following installed:
 ## 🛠️ Setup & Installation
 
 ### 1. Clone the Repository
-```bash
+```
 git clone https://github.com/shyam-pareek/apk-translate.git
 cd apk-translate
 ```
 
-2. Install Python Dependencies
+### 2. Install Python Dependencies
 Ensure you have Python 3 installed, then run:
 
-Bash
 ```
 pip install -r requirements.txt
 ```
