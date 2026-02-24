@@ -88,12 +88,6 @@ pip install -r requirements.txt
 python3 translate_apk.py your_app.apk
 ```
 
-Windows:
-
-```bash
-python translate_apk.py your_app.apk
-```
-
 ---
 
 ## 📦 Output
