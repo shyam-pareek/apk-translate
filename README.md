@@ -20,7 +20,7 @@ Translate localized Android app interfaces to English to streamline **mobile pen
 
 **APK-Translate** automates the process of translating non-English Android app UI strings into English.
 
-It decompiles the APK, translates resources, rebuilds the app, and signs it — all in a single command.
+It decompiles the APK, translates resources, rebuilds the app, and signs it - all in a single command.
 
 Perfect for security researchers dealing with localized applications during assessments.
 
@@ -65,8 +65,8 @@ APK → Decompile → Extract strings → Detect language → Translate → Rebu
 
 - Python 3.x  
 - Java JDK / JRE  
-- Apktool — https://apktool.org/docs/install/  
-- uber-apk-signer — https://github.com/patrickfav/uber-apk-signer/releases  
+- Apktool - https://apktool.org/docs/install/  
+- uber-apk-signer - https://github.com/patrickfav/uber-apk-signer/releases  
 
 Place `uber-apk-signer.jar` in the project root.
 
