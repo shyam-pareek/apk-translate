@@ -30,8 +30,8 @@ Before running the script, ensure you have the following installed:
 ### 1. Clone the Repository
 ```bash
 git clone https://github.com/shyam-pareek/apk-translate.git
-```
 cd apk-translate
+```
 
 2. Install Python Dependencies
 Ensure you have Python 3 installed, then run:
@@ -40,7 +40,7 @@ Bash
 ```
 pip install -r requirements.txt
 ```
-💻 How to Use
+## 💻 How to Use
 
 Step 1: Prepare your files
 Place the APK you want to translate and the uber-apk-signer.jar file inside the apk-translate folder.
@@ -48,10 +48,14 @@ Place the APK you want to translate and the uber-apk-signer.jar file inside the 
 Step 2: Run the script
 
 On macOS / Linux:
-```python3 translate_apk.py your_app.apk```
+```
+python3 translate_apk.py your_app.apk
+```
 
 On Windows:
-```python translate_apk.py your_app.apk```
+```
+python translate_apk.py your_app.apk
+```
 
 The script will perform the following automatically:
 
