@@ -29,7 +29,7 @@ Before running the script, ensure you have the following installed:
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/shyam-pareek/apk-translate.git](https://github.com/shyam-pareek/apk-translate.git)
+git clone https://github.com/shyam-pareek/apk-translate.git
 ```
 cd apk-translate
 
