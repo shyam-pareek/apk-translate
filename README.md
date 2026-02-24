@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/banner.svg" alt="APK-Translate Banner Dark"/>
+  <img src="docs/banner2.svg" alt="APK-Translate Banner Dark"/>
 </p>
 
 <p align="center">
