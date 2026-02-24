@@ -1,0 +1,53 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#020617"></stop>
+      <stop offset="100%" stop-color="#0f172a"></stop>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22c55e">
+        <animate attributeName="stop-color" values="#22c55e;#38bdf8;#22c55e" dur="6s" repeatCount="indefinite"></animate>
+      </stop>
+      <stop offset="100%" stop-color="#38bdf8"></stop>
+    </linearGradient>
+
+    <!-- scanning line -->
+    <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#22c55e" stop-opacity="0"></stop>
+      <stop offset="50%" stop-color="#22c55e" stop-opacity="0.6"></stop>
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0"></stop>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="300" rx="18" fill="url(#bg)"></rect>
+
+  <!-- animated scan line -->
+  <rect x="0" y="-60" width="1200" height="60" fill="url(#scanGrad)">
+    <animate attributeName="y" from="-60" to="300" dur="4s" repeatCount="indefinite"></animate>
+  </rect>
+
+  <!-- Title -->
+  <text x="80" y="155" fill="url(#accent)" font-size="64" font-family="Segoe UI, Arial, sans-serif" font-weight="700">
+    APK-Translate
+  </text>
+
+  <text x="80" y="205" fill="#94a3b8" font-size="28" font-family="Segoe UI, Arial, sans-serif">
+    Android UI Translation for Security Testing
+  </text>
+
+  <!-- subtle floating dots -->
+  <circle cx="1020" cy="90" r="6" fill="#22c55e">
+    <animate attributeName="cy" values="90;110;90" dur="3s" repeatCount="indefinite"></animate>
+  </circle>
+
+  <circle cx="1080" cy="160" r="5" fill="#38bdf8">
+    <animate attributeName="cy" values="160;140;160" dur="4s" repeatCount="indefinite"></animate>
+  </circle>
+
+  <circle cx="1120" cy="120" r="4" fill="#22c55e">
+    <animate attributeName="cy" values="120;140;120" dur="5s" repeatCount="indefinite"></animate>
+  </circle>
+
+</svg>
